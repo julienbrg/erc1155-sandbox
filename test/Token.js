@@ -20,7 +20,7 @@ describe("ERC1155 token", function () {
     describe("Deployment", function () {
 
 
-        it("Did addr receive the NFT", async function () {
+        it("Should receive the NFT", async function () {
             await nft.makeNFT(1);
             let balance = await nft.balanceOf(addr.address, 0);
             let balanceHex = balance.toString();
